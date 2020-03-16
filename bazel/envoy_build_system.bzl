@@ -14,7 +14,7 @@ load(
 )
 load(
     ":envoy_select.bzl",
-    _envoy_select_boringssl = "envoy_select_boringssl",
+    _envoy_select_openssl = "envoy_select_openssl",
     _envoy_select_google_grpc = "envoy_select_google_grpc",
     _envoy_select_hot_restart = "envoy_select_hot_restart",
     _envoy_select_wasm = "envoy_select_wasm",
@@ -165,7 +165,7 @@ def envoy_google_grpc_external_deps():
 # from the other bzl files (e.g. envoy_select.bzl, envoy_binary.bzl, etc.)
 
 # Select wrappers (from envoy_select.bzl)
-envoy_select_boringssl = _envoy_select_boringssl
+envoy_select_openssl = _envoy_select_openssl
 envoy_select_google_grpc = _envoy_select_google_grpc
 envoy_select_hot_restart = _envoy_select_hot_restart
 envoy_select_wasm = _envoy_select_wasm
